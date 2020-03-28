@@ -13,7 +13,7 @@ cd jma14
 rake tiles
 rake style
 ```
-`Primary_medical_area`
+We use `Primary_medical_area` and `Secondary_medical_area`.
 
 
 ## Note

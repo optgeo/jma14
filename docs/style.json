@@ -15,12 +15,64 @@
         ]
       },
       "type": "background"
+    },
+    {
+      "id": "pma",
+      "paint": {
+        "fill-color": [
+          "rgba",
+          0,
+          0,
+          127,
+          0.5
+        ]
+      },
+      "source": "pma",
+      "source-layer": "Primary_medical_area",
+      "type": "fill"
+    },
+    {
+      "id": "sma",
+      "paint": {
+        "fill-extrusion-color": [
+          "rgb",
+          0,
+          127,
+          0
+        ],
+        "fill-extrusion-height": [
+          "*",
+          [
+            "/",
+            [
+              "get",
+              "A38b_007"
+            ],
+            [
+              "get",
+              "A38b_006"
+            ]
+          ],
+          5
+        ],
+        "fill-extrusion-opacity": 0.5
+      },
+      "source": "sma",
+      "source-layer": "Secondary_medical_area",
+      "type": "fill-extrusion"
     }
   ],
   "sources": {
     "pma": {
-      "attributiion": "国土数値情報　医療圏データ",
       "attribution": "国土数値情報　医療圏データ",
+      "maxzoom": 12,
+      "tiles": [
+        "https://optgeo.github.io/jma14/zxy/pma/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "sma": {
+      "attributiion": "国土数値情報　医療圏データ",
       "maxzoom": 12,
       "tiles": [
         "https://optgeo.github.io/jma14/zxy/sma/{z}/{x}/{y}.pbf"
@@ -28,5 +80,6 @@
       "type": "vector"
     }
   },
-  "version": 8
+  "version": 8,
+  "zoom": 6
 }
