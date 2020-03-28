@@ -1,0 +1,31 @@
+{
+  "center": [
+    139.714,
+    35.7
+  ],
+  "layers": [
+    {
+      "id": "background",
+      "paint": {
+        "background-color": [
+          "rgb",
+          243,
+          245,
+          250
+        ]
+      },
+      "type": "background"
+    }
+  ],
+  "sources": {
+    "pma": {
+      "attribution": "国土数値情報　医療圏データ",
+      "maxzoom": 12,
+      "tiles": [
+        "https://optgeo.github.io/jma2014/zxy/pma/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8
+}
